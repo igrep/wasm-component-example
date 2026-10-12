@@ -1,0 +1,5 @@
+package example:example;
+
+world example {
+  export greet: func(caller: string) -> string;
+}
