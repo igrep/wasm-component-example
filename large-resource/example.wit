@@ -1,0 +1,7 @@
+package example:example;
+
+world example {
+  resource blob {
+    append: func(value: u8) -> blob;
+  }
+}

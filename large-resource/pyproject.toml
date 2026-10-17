@@ -1,0 +1,16 @@
+[project]
+name = "simple-with-bindings"
+version = "0.1.0"
+requires-python = ">=3.14"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "YAMAMOTO Yuji", email = "igrep@n.email.ne.jp" }
+]
+dependencies = []
+
+[dependency-groups]
+dev = [
+    "componentize-py>=0.25.1",
+    "ruff>=0.17.0",
+]
