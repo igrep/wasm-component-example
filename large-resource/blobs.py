@@ -9,6 +9,10 @@ class Blob(blobs.Blob):
     def append(self, value: int):
         global escape
         escape = self
+        self.contents.append(value)
+
+    def append_global(self, value: int):
+        global escape
         escape.contents.append(value)
 
     def get_contents(self) -> bytes:
