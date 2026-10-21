@@ -11,4 +11,5 @@ interface blobs {
 
 world example {
   export blobs;
+  export call-gc: func();
 }
