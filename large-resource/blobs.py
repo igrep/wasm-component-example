@@ -17,3 +17,11 @@ class Blob(blobs.Blob):
 
     def get_contents(self) -> bytes:
         return bytes(self.contents)
+
+    @staticmethod
+    def get_global_contents() -> bytes:
+        global escape
+        print("From staticmethod:")
+        print(escape)
+        print(escape.contents)
+        return bytes(escape.contents)
