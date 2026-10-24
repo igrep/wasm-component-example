@@ -4,7 +4,7 @@ set -eux
 
 cd "$(dirname "$0")"
 
-uv run componentize-py -d example.wit -w example componentize python -o python.wasm
+uv run componentize-py -d example.wit -w example componentize blobs -o python.wasm
 pnpm exec jco transpile python.wasm -o out-python
 
 pnpm exec jco componentize processor.js --wit example.wit --world-name processor-world --disable all -o processor.wasm

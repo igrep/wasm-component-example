@@ -4,9 +4,7 @@ interface blobs {
   resource blob {
     constructor(contents: list<u8>);
     append: func(value: u8);
-    append-global: func(value: u8);
     get-contents: func() -> list<u8>;
-    get-global-contents: static func() -> list<u8>;
   }
 }
 
@@ -24,6 +22,4 @@ world processor-world {
 
 world example {
   export blobs;
-  export call-gc: func();
-  export get-global-contents: func() -> list<u8>;
 }
