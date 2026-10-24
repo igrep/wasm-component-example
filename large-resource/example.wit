@@ -10,6 +10,18 @@ interface blobs {
   }
 }
 
+interface processor {
+  use blobs.{blob};
+
+  process: func(b: borrow<blob>);
+  later: func() -> list<u8>;
+}
+
+world processor-world {
+  import blobs;
+  export processor;
+}
+
 world example {
   export blobs;
   export call-gc: func();
