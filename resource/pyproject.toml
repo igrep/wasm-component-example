@@ -1,5 +1,5 @@
 [project]
-name = "simple-with-bindings"
+name = "resource"
 version = "0.1.0"
 requires-python = ">=3.14"
 description = "Add your description here"
